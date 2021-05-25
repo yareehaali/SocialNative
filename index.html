@@ -1,40 +1,45 @@
 <head> 
     <title>Modal for SocialNative </title>
     <style>
-        @media only screen and (max-width: 640px){
-        div {
+      @media only screen and (max-width: 640px){
+      img{
+        display: none;
+      }
+      
+      div {
         background-image: url("https://lh3.googleusercontent.com/F3JaNfJFCn2q38IeybjI4GSPuoeFQ-7uYJ9sFMFU64M4kJuthYzsRiSpv09-u5r59iLPYA=s170");
-        width: 300px;
-        height: 300px;
+        height: 100px;
         background-repeat: no-repeat;
-        }
-        }
+        margin: 20px 0 20px 0;
+        align-content: center;
+      }
+      }
 
-        button {
+      button {
         background-color: cadetblue;
         padding: 10px 25px;
         color: white;
         border-radius: 5px;
         font-size: 15px;
-        }
+      }
 
-        #modal_container { 
+      #modal_container { 
         /* hide image during initial page load */
         display: none;
-        }
+      }
 
-        #modal_container.show {
+      #modal_container.show {
         /* display when .show is selected  */
         display: block;
-        }
+      }
 
-        #off {
+      #off {
         display: none;
-        }
+      }
 
-        #off.show {
+      #off.show {
         display: block;
-        }
+      }
     </style>
     </head>
     <body>
